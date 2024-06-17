@@ -1,0 +1,1 @@
+screen -dmS mipebot mvn exec:java -Dexec.mainClass="test.mipe.Main"
