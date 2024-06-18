@@ -7,8 +7,6 @@ import java.util.concurrent.TimeUnit;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
 
-import java.util.Date;
-
 public class Uutanmennsyonn {
 
     public static void start(JDA jda) {
