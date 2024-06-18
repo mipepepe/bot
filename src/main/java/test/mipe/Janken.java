@@ -31,7 +31,7 @@ public class Janken {
     }
 
     public static String determineWinner(String playerHand, String computerHand) {
-        if (playerHand == computerHand) {
+        if (playerHand.equals(computerHand)) {
             return "引き分け";
         } else if ((playerHand.equals("ぐー") && computerHand.equals("ちょき")) ||
                 (playerHand.equals("ちょき") && computerHand.equals("ぱー")) ||
