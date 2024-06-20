@@ -32,7 +32,7 @@ public class Discord extends ListenerAdapter {
             event.getMessage().reply("Ryoうるさい！").queue();
             return;
         }
-        fuck.FuckX(event.getMessage());
+        fuck.FuckX(event);
     }
 
     @Override
