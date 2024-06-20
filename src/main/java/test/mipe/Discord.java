@@ -17,10 +17,17 @@ public class Discord extends ListenerAdapter {
         if (content.contains("いろは")) {
             event.getChannel().sendMessage("<@970882801475928115>").queue();
         }
-        if ("728963236715692123".equals(event.getMessage().getAuthor().getId())) {
-            String result = new PostToAI().getContent("この発言内容から発言者が酔っているか酔っていないかを「酔っています」か「酔っていません」で判定してください", content);
-            System.out.println("AIの応答は: " + result + "でした。");
-            if (result.contains("酔っています")){event.getChannel().sendMessage(result).queue();}
+        /*
+         * if ("728963236715692123".equals(event.getMessage().getAuthor().getId())) {
+         * String result = new PostToAI().getContent(
+         * "この発言内容から発言者が酔っているか酔っていないかを「酔っています」か「酔っていません」で判定してください", content);
+         * System.out.println("AIの応答は: " + result + "でした。");
+         * if
+         * (result.contains("酔っています")){event.getChannel().sendMessage(result).queue();}
+         * }
+         */
+        if ("810491150808514611".equals(event.getMessage().getAuthor().getId()) && content.length() >= 100) {
+            event.getMessage().reply("Ryoうるさい！").queue();
         }
     }
 
