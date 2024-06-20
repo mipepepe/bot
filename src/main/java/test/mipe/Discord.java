@@ -6,6 +6,7 @@ import net.dv8tion.jda.api.events.session.ReadyEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 public class Discord extends ListenerAdapter {
+    Elonfuck fuck = new Elonfuck();
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
         String content = event.getMessage().getContentRaw().strip();
@@ -16,6 +17,7 @@ public class Discord extends ListenerAdapter {
         }
         if (content.contains("いろは")) {
             event.getChannel().sendMessage("<@970882801475928115>").queue();
+            return;
         }
         /*
          * if ("728963236715692123".equals(event.getMessage().getAuthor().getId())) {
@@ -28,7 +30,9 @@ public class Discord extends ListenerAdapter {
          */
         if ("810491150808514611".equals(event.getMessage().getAuthor().getId()) && content.length() >= 100) {
             event.getMessage().reply("Ryoうるさい！").queue();
+            return;
         }
+        fuck.FuckX(event.getMessage());
     }
 
     @Override
