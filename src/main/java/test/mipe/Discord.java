@@ -9,6 +9,8 @@ public class Discord extends ListenerAdapter {
     Elonfuck fuck = new Elonfuck();
     Memo memo = new Memo();
     AA aa = new AA();
+    Mihomo mihomo = new Mihomo();
+
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
         String content = event.getMessage().getContentRaw().strip();
@@ -37,6 +39,7 @@ public class Discord extends ListenerAdapter {
         fuck.FuckX(event);
         aa.AAEvent(event);
         memo.onMessage(event);
+        mihomo.event(event);
     }
 
     @Override
