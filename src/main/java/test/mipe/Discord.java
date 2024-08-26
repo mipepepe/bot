@@ -10,6 +10,7 @@ public class Discord extends ListenerAdapter {
     Memo memo = new Memo();
     AA aa = new AA();
     Mihomo mihomo = new Mihomo();
+    DiceRoll diceRoll = new DiceRoll();
 
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
@@ -40,6 +41,7 @@ public class Discord extends ListenerAdapter {
         aa.AAEvent(event);
         memo.onMessage(event);
         mihomo.event(event);
+        diceRoll.event(event);
     }
 
     @Override
